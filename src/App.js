@@ -1,12 +1,12 @@
 import './App.css';
-import Counter from './features/counter/Counter';
+import PostList from './features/post/PostList';
 
 
 const App = () => {
   return (
-    <div className="App">
-     <Counter />
-    </div>
+   <main>
+     <PostList />
+   </main>
   );
 }
 

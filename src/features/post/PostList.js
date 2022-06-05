@@ -15,10 +15,10 @@ const PostList = () => {
     ));
 
   return (
-    <selection>
+    <section>
         <h1> Post </h1>
         {renderPosts}
-    </selection>
+    </section>
   )
 }
 

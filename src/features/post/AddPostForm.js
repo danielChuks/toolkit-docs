@@ -6,8 +6,8 @@ import { selectAllUsers } from '../users/usersSlice';
 
 
 const AddPostForm = () => {
-
   const dispatch = useDispatch();
+
   const [title, setTitle]=useState('');
   const [content, setContent]=useState('');
   const [userId, setUserId] =useState('');

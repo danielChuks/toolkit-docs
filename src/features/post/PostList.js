@@ -8,8 +8,10 @@ import React from 'react'
 const PostList = () => {
     const posts = useSelector(selectAllPosts);
 
+    //We initially was mapping through the post but now we are creating a new variable that will use the localeCompare to check the date to ensure the most recent post comes to the top when post are made.
+    const orderedPost = posts.slice().sort((a, b) => b.date.localeCompare(a.date));
 
-    const renderPosts = posts.map(post => (
+    const renderPosts = orderedPost.map(post => (
         <article key={post.id}>
             <h1>{post.title}</h1>
             <p>{post.content.substring(0, 100)}</p>

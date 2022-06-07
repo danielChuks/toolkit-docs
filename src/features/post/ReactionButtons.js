@@ -6,9 +6,9 @@ const reactionEmoji = {
     thumbsUp: "👍",
     wow: "😯",
     heart: " 💖 ",
-    rocket: " ",
+    rocket: "🚀",
     coffee: " ☕ "
-}
+};
 
 const ReactionButtons  = ({post}) => {
     const dispatch = useDispatch();

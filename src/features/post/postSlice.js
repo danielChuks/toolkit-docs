@@ -15,11 +15,18 @@ const initialState = [
     }
     },
 
-    {id: "2",
-     title: "iniivcible snake", 
-     content: "No one could see the harmful snake untill it stuck",
-     date: sub(new Date(), {minutes: 5}).toISOString(),
-    }
+    // {id: "2",
+    //  title: "iniivcible snake", 
+    //  content: "No one could see the harmful snake untill it stuck",
+    //  date: sub(new Date(), {minutes: 5}).toISOString(),
+    //  reactions:{
+    //     thumbsUp: 0,
+    //     wow: 0,
+    //     heart:0,
+    //     rocket: 0,
+    //     coffee: 0
+    // }
+    // }
 ]
 
 const postSlice = createSlice({
@@ -42,8 +49,8 @@ const postSlice = createSlice({
                             thumbsUp: 0,
                             wow: 0,
                             heart: 0,
-                            rocket:0,
-                            coffee:0
+                            rocket: 0,
+                            coffee: 0
                         }
                     }
                 }
